@@ -1,0 +1,187 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e2b7c8;
+    color: #2d2d2d;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #d84389;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #bb3473;
+}
+
+/* Header */
+.header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #db3487;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    font-weight: 500;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive menu */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+/* Main */
+.main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.centered {
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    color: #fa198a;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #9c1d8b;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #2f2f33;
+    margin-bottom: 1.5rem;
+}
+
+/* Badges */
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.badges li {
+    background-color: #f04f9a;
+    color: #1f1b1d;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-weight: 500;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.skill {
+    background: rgb(201, 186, 186);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    width: 90px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Button */
+.btn {
+    background-color: #e546a3;
+    color: rgb(30, 33, 34);
+    padding: 0.75rem 2rem;
+    border-radius: 999px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ee2270;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
